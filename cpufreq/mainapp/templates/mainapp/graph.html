@@ -1,0 +1,10 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<p>График загрузки процессора с интервалом 5 секунд за последний час работы сервиса:</p>
+<img src="{% static 'graph_5_second.png' %}">
+<p>График усредненной загрузки процессора (среднее значение за 1 минуту) за последний час работы сервиса:</p>
+<img src="{% static 'graph_1_minute.png' %}">
+{% endblock %}

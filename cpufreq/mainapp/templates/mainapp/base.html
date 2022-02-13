@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+{% block mainmenu %}
+
+    <ul>
+        <li><a href="{% url 'main' %}">Главная страница</a></li>
+        <li><a href="{% url 'graph' %}">Графики</a></li>
+    </ul>
+
+<!--    <ul>-->
+<!--        {% for menu in menu %}-->
+<!--            <li><a href="#">{{ menu }}</a>-->
+<!--            </li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
+{% endblock mainmenu %}
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
